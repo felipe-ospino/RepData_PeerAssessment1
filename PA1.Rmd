@@ -3,11 +3,12 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+    
 ---
 
 
 ## Loading and preprocessing the data
-```{r, setup, include=TRUE, echo=TRUE}
+```{r, fig.path='figure/',setup, include=TRUE, echo=TRUE}
 activity <- read.csv("~/activity.csv")
 library(dplyr)
 library(lubridate)
