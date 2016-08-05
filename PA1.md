@@ -58,7 +58,7 @@ table1 <- group_by(activity, date) %>% summarise(steps1 = sum(steps))
 barplot(table1$steps1, main = "Historam of steps by date", las = 1)
 ```
 
-![](PA1_files/figure/unnamed-chunk-2-1.png)<!-- -->
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
 
 3 . Calculate and report the mean and median of the total number of steps taken per day
 
