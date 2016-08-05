@@ -7,7 +7,7 @@ output:
 
 
 ## Loading and preprocessing the data
-```{r, setup, echo=TRUE}
+```{r, setup, include=TRUE, echo=TRUE}
 activity <- read.csv("~/activity.csv")
 library(dplyr)
 library(lubridate)
