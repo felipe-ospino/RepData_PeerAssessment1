@@ -58,7 +58,7 @@ table1 <- group_by(activity, date) %>% summarise(steps1 = sum(steps))
 barplot(table1$steps1, main = "Historam of steps by date", las = 1)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 3 . Calculate and report the mean and median of the total number of steps taken per day
 
@@ -87,7 +87,7 @@ table2 <- group_by(activity, interval) %>% summarise(average = mean(steps, na.rm
 plot(table2$interval, table2$average, type = "l", las = 1, main = "Average steps by time", xlab = "Time every 5 min", ylab = "Average steps")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 2.  Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -137,7 +137,7 @@ table3 <- group_by(activity1, date) %>% summarise(steps1 = sum(steps))
 barplot(table3$steps1, main = "Historam of steps by date", las = 1)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 mean(table3$steps1, na.rm = TRUE)
@@ -180,4 +180,4 @@ plot(Weekdays$interval,Weekdays$average, type = "l", main = "Weekdays", xlab = "
 plot(Weekends$interval,Weekends$average, type = "l", main = "Weekends", xlab = "Interval", ylab = "Average Steps")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
